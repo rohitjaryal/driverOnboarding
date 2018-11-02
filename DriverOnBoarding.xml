@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="tests" verbose="1" parallel="false">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="baseURL" value="https://admin.yojee.com"/>
+    <parameter name="userName" value="NA"/>
+    <parameter name="password" value="NA"/>
+    <parameter name="name" value="NA"/>
+    <parameter name="email" value="NA"/>
+    <parameter name="phoneNumber" value="NA"/>
+    <parameter name="isSmsTokenEnabled" value="false"/>
+    <parameter name="smsToken" value="asdkl@#12"/>
+    <test name="ValidateDriverOnBoard">
+        <classes>
+            <class name="tests.ValidateDriverOnBoard"/>
+        </classes>
+    </test>
+</suite>
